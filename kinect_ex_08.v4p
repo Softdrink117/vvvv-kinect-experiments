@@ -1560,7 +1560,7 @@
    <PIN pinname="Aspect Ratio" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <NODE id="1" componentmode="InAWindow" systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)">
+   <NODE id="1" componentmode="FullScreen" systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)">
    <BOUNDS type="Node" left="10800" top="15975" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="10800" top="15975" width="6000" height="4500">
@@ -1951,13 +1951,11 @@
    <NODE systemname="Echo (DX11.Texture 2d)" filename="%VVVV%\packs\dx11\nodes\modules\Echo\Echo (DX11.Texture 2d).v4p" nodename="Echo (DX11.Texture 2d)" componentmode="Hidden" id="276">
    <BOUNDS type="Node" left="6405" top="15255" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Texture In" visible="1">
+   <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="215" srcpinname="Texture Out" dstnodeid="276" dstpinname="Texture In">
-   </LINK>
    <LINK srcnodeid="78" srcpinname="RGB" dstnodeid="202" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="225" srcpinname="Texture Out" dstnodeid="219" dstpinname="Texture In">
